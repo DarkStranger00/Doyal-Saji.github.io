@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    padding-bottom: 50px; /* Added padding to prevent content from being hidden behind the footer */
 }
 
 header {
@@ -43,8 +44,8 @@ section {
     height: 601px;
     border-radius: 50%;
     object-fit: cover; 
-
 }
+
 h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
@@ -67,4 +68,22 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-pic {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
