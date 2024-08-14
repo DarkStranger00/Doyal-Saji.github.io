@@ -1,24 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    padding-bottom: 50px; /* Added padding to prevent content from being hidden behind the footer */
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(45deg, #4A90E2, #9013FE);
     color: #fff;
-    padding: 20px;
+    padding: 40px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
 nav ul li {
@@ -26,64 +31,76 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-section {
+nav ul li a:hover {
+    background-color: #4A90E2;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    display: flex;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 1000px; /* Adjusted for larger image */
 }
 
 .profile-pic {
-    float: left;
-    margin-right: 15px;
     width: 601px;
-    height: 601px;
-    border-radius: 50%;
-    object-fit: cover; 
+    height: 699px;
+    border-radius: 20px; /* Changed to match rectangular image */
+    object-fit: cover;
+    margin-right: 20px;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+.card-content {
+    flex: 1;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
 }
 
-li {
-    margin-bottom: 15px;
+.grid-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+    background-color: #4A90E2;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-@media screen and (max-width: 600px) {
-    .profile-pic {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
+.social-icons {
+    margin-top: 10px;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+.social-icons a:hover {
+    color: #9013FE;
 }
