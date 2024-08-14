@@ -39,9 +39,11 @@ section {
 .profile-pic {
     float: left;
     margin-right: 15px;
-    width: 150px;
+    width: 601px;
+    height: 601px;
     border-radius: 50%;
-}
+    object-fit: cover; 
+
 
 h2 {
     border-bottom: 2px solid #333;
