@@ -1,29 +1,33 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(45deg, #4A90E2, #9013FE);
+    background-color: #333;
     color: #fff;
-    padding: 40px 0;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #444;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
 }
 
 nav ul li {
@@ -31,35 +35,32 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #4A90E2;
-    color: #fff;
-    border-radius: 30px;
+    text-decoration: underline;
 }
 
 .card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     display: flex;
-    padding: 20px;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 1000px; /* Adjusted for larger image */
+    padding: 20px;
+    max-width: 800px;
 }
 
 .profile-pic {
-    width: 601px;
-    height: 699px;
-    border-radius: 20px; /* Changed to match rectangular image */
-    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 .card-content {
@@ -68,29 +69,28 @@ nav ul li a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 900px;
     margin: 20px auto;
+    max-width: 800px;
 }
 
 .grid-item {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 footer {
-    background-color: #4A90E2;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-.social-icons {
-    margin-top: 10px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .social-icons a {
@@ -98,9 +98,8 @@ footer {
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #9013FE;
+    color: #ddd;
 }
