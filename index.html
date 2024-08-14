@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doyal Saji's Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -22,46 +23,55 @@
     </nav>
     
     <section id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Doyal Saji's Profile Picture" class="profile-pic">
-        <p>I am an experienced web developer with a passion for creating responsive and user-friendly websites. I enjoy working with the latest technologies to solve problems and improve user experience.</p>
+        <div class="card">
+            <img src="profile.jpg" alt="Doyal Saji's Profile Picture" class="profile-pic">
+            <div class="card-content">
+                <h2>About Me</h2>
+                <p>I am an experienced web developer with a passion for creating responsive and user-friendly websites. I enjoy working with the latest technologies to solve problems and improve user experience.</p>
+            </div>
+        </div>
     </section>
     
     <section id="experience">
         <h2>Experience</h2>
-        <ul>
-            <li>
+        <div class="grid-container">
+            <div class="grid-item">
                 <h3>Web Developer at ABC Corp</h3>
                 <p>2020 - 2023</p>
                 <p>Developed and maintained the company's website, ensuring cross-browser compatibility and improving user engagement.</p>
-            </li>
-            <li>
+            </div>
+            <div class="grid-item">
                 <h3>Frontend Developer at XYZ Inc</h3>
                 <p>2017 - 2020</p>
                 <p>Worked on various frontend projects using HTML, CSS, and JavaScript to create interactive and visually appealing user interfaces.</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
     
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Responsive Design</li>
-        </ul>
+        <div class="grid-container">
+            <div class="grid-item">HTML & CSS</div>
+            <div class="grid-item">JavaScript</div>
+            <div class="grid-item">React</div>
+            <div class="grid-item">Node.js</div>
+            <div class="grid-item">Responsive Design</div>
+        </div>
     </section>
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:john.doe@example.com">Doyalsaji@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/doyalsaji</a></p>
+        <p>Email: <a href="mailto:doyalsaji@gmail.com">doyalsaji@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/doyalsaji" target="_blank">linkedin.com/in/doyalsaji</a></p>
     </section>
     
     <footer>
-        <p>&copy; 2024 Doyal saji</p>
+        <p>&copy; 2024 Doyal Saji</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/doyalsaji" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/doyalsaji" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/doyalsaji" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
